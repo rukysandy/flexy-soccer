@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-5cd3f1961e025ae1f199.js"
+    "url": "webpack-runtime-3c131cf6bf0316f6a36a.js"
   },
   {
     "url": "framework-c52b31cf79179d919bc6.js"
   },
   {
-    "url": "app-7b3b8c7aeb6d4314564e.js"
+    "url": "app-df448942511f433c485c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9a772327a5a2d050c8780c95fb9df06f"
+    "revision": "68200c672e383fed9674770edda8cb18"
   },
   {
     "url": "google-fonts/s/droidserif/v13/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "302f4f05365597611dc550ad34f5cabe"
+    "revision": "2e739523cc1a2406a742a909c9e1ce07"
   },
   {
     "url": "manifest.webmanifest",
@@ -173,7 +173,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/flexy-soccer/app-7b3b8c7aeb6d4314564e.js`))) {
+  if (!resources || !(await caches.match(`/flexy-soccer/app-df448942511f433c485c.js`))) {
     return await fetch(event.request)
   }
 
